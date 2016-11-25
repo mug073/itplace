@@ -52,7 +52,8 @@ public class DriverInit {
             capabilities = DesiredCapabilities.chrome();
             capabilities.setJavascriptEnabled(true);
             //capabilities.setCapability("chrome.binary", "/usr/lib/chromium-browser/chromium-browser");
-            capabilities.setCapability("chrome.binary", "C:\\work4food\\corpsites-automation-tests-Daily\\libs\\chromedriver.exe");
+            //capabilities.setCapability("chrome.binary", "C:\\work4food\\corpsites-automation-tests-Daily\\libs\\chromedriver.exe");
+            capabilities.setCapability("chrome.binary", "/libs/chromedriver.exe");
         } else if (BROWSER.equals("firefox")) {
             FirefoxProfile firefoxProfile = new FirefoxProfile();
             firefoxProfile.setEnableNativeEvents(true);
